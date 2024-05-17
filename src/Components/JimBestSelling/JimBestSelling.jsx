@@ -21,9 +21,9 @@ import gmo4 from "../../assets/images/gmo4.png";
 import gmo5 from "../../assets/images/gmo5.png";
 import gmo6 from "../../assets/images/gmo6.png";
 
-import "./scottbestselling.scss";
+import "./jimbestselling.scss";
 
-const ScottBestSelling = () => {
+const JimBestSelling = () => {
     const BookContent = [
         {
             id: 1,
@@ -122,6 +122,10 @@ const ScottBestSelling = () => {
                                     clickable: true,
                                 }}
                                 breakpoints={{
+                                    425: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
                                     640: {
                                         slidesPerView: 2,
                                         spaceBetween: 20,
@@ -181,4 +185,4 @@ const ScottBestSelling = () => {
     );
 };
 
-export default ScottBestSelling;
+export default JimBestSelling;

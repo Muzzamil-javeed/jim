@@ -125,20 +125,43 @@
 }
 
 @media (max-width: 768px) {
+    .dots-img2 img {
+        width: 100px;
+        position: absolute;
+        right: 17px;
+        top: -90px;
+        z-index: 9;
+        rotate: 180deg;
+    }
+
+    .dots-img img {
+        width: 100px;
+        position: absolute;
+        left: 22px;
+        top: 35px;
+        z-index: 9;
+    }
+
     .aboutscott-wrapper {
         padding: 50px 0px;
 
         .scott-miller-content {
             h4 {
-                font-size: 20px;
+                font-size: 36px;
+                margin-top: 22px;
             }
 
             h2 {
-                font-size: 48px;
+                font-size: 30px;
+                line-height: 30px;
             }
 
             p {
                 font-size: 16px;
+                padding: 0px;
+                border: none;
+                line-height: 26px;
+                text-align: justify;
             }
         }
     }

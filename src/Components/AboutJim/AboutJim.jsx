@@ -1,5 +1,5 @@
 import React from "react";
-import "./aboutscott.scss";
+import "./aboutjim.scss";
 import scottmiller from "../../assets/images/home-scott-img.png";
 import dots from "../../assets/images/dots.png";
 import signImg from "../../assets/images/signature.png";
@@ -35,13 +35,13 @@ const AboutScott = () => {
                                 </Link>
                             </div>
                             <div className="row">
-                                <div className="col-md-6"></div>
-                                <div className="col-md-4">
+                                <div className="col-md-6 col-8"></div>
+                                <div className="col-md-4 col-4">
                                     <div className="sign-img">
                                         <img src={signImg} alt="img" />
                                     </div>
                                 </div>
-                                <div className="col-md-1"></div>
+                                <div className="col-md-1 col-0"></div>
                             </div>
 
                         </div>

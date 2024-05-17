@@ -47,18 +47,18 @@ const HomeBanner = () => {
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                             </p>
                                             <div className="row rates mt-5">
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-5">
                                                     <h5>$9.5 <span> <strike>$12.0</strike> </span></h5>
                                                 </div>
-                                                <div className="col-md-6">
+                                                <div className="col-md-6 col-6">
                                                     <h4><span>20% OFF</span></h4>
                                                 </div>
                                             </div>
                                             <div className="row mt-3">
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-6 mb-2">
                                                     <button className="buy-btn">Buy Now</button>
                                                 </div>
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-6 mb-2">
                                                     <button className="buy-btn2">See Details</button>
                                                 </div>
                                             </div>
@@ -82,18 +82,18 @@ const HomeBanner = () => {
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                             </p>
                                             <div className="row rates mt-5">
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-5">
                                                     <h5>$9.5 <span> <strike>$12.0</strike> </span></h5>
                                                 </div>
-                                                <div className="col-md-6">
+                                                <div className="col-md-6 col-6">
                                                     <h4><span>20% OFF</span></h4>
                                                 </div>
                                             </div>
                                             <div className="row mt-3">
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-6 mb-2">
                                                     <button className="buy-btn">Buy Now</button>
                                                 </div>
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-6 mb-2">
                                                     <button className="buy-btn2">See Details</button>
                                                 </div>
                                             </div>
@@ -117,18 +117,18 @@ const HomeBanner = () => {
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                                             </p>
                                             <div className="row rates mt-5">
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-5">
                                                     <h5>$9.5 <span> <strike>$12.0</strike> </span></h5>
                                                 </div>
-                                                <div className="col-md-6">
+                                                <div className="col-md-6 col-6">
                                                     <h4><span>20% OFF</span></h4>
                                                 </div>
                                             </div>
                                             <div className="row mt-3">
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-6 mb-2">
                                                     <button className="buy-btn">Buy Now</button>
                                                 </div>
-                                                <div className="col-md-4">
+                                                <div className="col-md-4 col-6 mb-2">
                                                     <button className="buy-btn2">See Details</button>
                                                 </div>
                                             </div>

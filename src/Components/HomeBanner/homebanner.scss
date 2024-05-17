@@ -238,6 +238,23 @@
 }
 
 @media(max-width: 786px) {
+    .homebanner-wrapper .slide-wrap .content-wrapper h1 span {
+        color: #ffffff;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: normal;
+        display: block;
+        letter-spacing: 6px;
+    }
+
+    .mainbanner {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        height: revert;
+    }
+
     .homebanner-wrapper {
         height: auto;
 
@@ -248,15 +265,26 @@
                 flex: 0 0 100%;
 
                 h1 {
-                    font-size: 40px;
-                    line-height: 50px;
-                    text-align: center;
+                    font-size: 30px;
+                    line-height: 48px;
+                    text-align: left;
+                }
+
+                h2 {
+                    color: #fdfdfd;
+                    font-family: ui-rounded;
+                    font-size: 33px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 46px;
+                    font-family: "Playfair Display", serif;
                 }
 
                 p {
-                    font-size: 20px;
-                    line-height: 30px;
-                    text-align: center;
+                    font-size: 16px;
+                    line-height: 29px;
+                    text-align: left;
+                    padding-left: 15px;
 
                     span {
                         font-size: 20px;

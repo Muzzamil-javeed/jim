@@ -58,6 +58,10 @@ const GalleryHome = () => {
                                  clickable: true,
                              }}
                              breakpoints={{
+                                425: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
                                  640: {
                                      slidesPerView: 2,
                                      spaceBetween: 20,

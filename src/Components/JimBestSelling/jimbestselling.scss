@@ -243,6 +243,22 @@ body {
 }
 
 @media(max-width: 768px) {
+    .sellbooks {
+        padding-top: 43px;
+    }
+
+    .rate-price i {
+        font-size: 16px;
+    }
+
+    .rate-price h4 span {
+        font-size: 14px;
+    }
+
+    .book-selling-wrapper {
+        padding: revert;
+    }
+
     .bestsellingbooks-wrapper {
         padding: 50px 0px;
 
@@ -266,11 +282,15 @@ body {
 
                 .book-content {
                     h4 {
-                        font-size: 20px;
+                        font-size: 14px;
                     }
 
                     p {
-                        font-size: 16px;
+                        font-size: 12px;
+                    }
+
+                    h5 {
+                        font-size: 12px;
                     }
                 }
             }

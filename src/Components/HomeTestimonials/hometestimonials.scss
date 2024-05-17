@@ -134,6 +134,19 @@
 }
 
 @media(max-width: 768px) {
+    .mitchadam-wrapper {
+        padding: 13px;
+    }
+
+    .mitchadam-img img {
+        margin-top: 4rem;
+    }
+
+    .accor h4 {
+        font-size: 33px;
+        line-height: 127.6%;
+    }
+
     .testimonials-wrapper {
         padding: 50px 0px;
 
@@ -160,6 +173,7 @@
                 .testimonial-text {
                     p {
                         font-size: 16px;
+                        padding: 0;
                     }
                 }
 
@@ -176,12 +190,13 @@
         }
 
         .swiper-button-prev {
-            left: 20px;
+            left: 75px;
+            top: 100%;
         }
 
         .swiper-button-next {
-            left: 150px;
-            top: 101%;
+            left: 300px;
+            top: 100%;
         }
     }
 }
