@@ -1,0 +1,91 @@
+name: Push-to-Live
+
+# Trigger deployment only on push to master branch
+on:
+  push:
+    branches:
+      - frontend
+      - main
+
+jobs:
+  deployment-frontend:
+    name: initialising deployment frontend
+    if: github.ref == 'refs/heads/frontend'
+    runs-on: ubuntu-20.04
+    steps:
+      - name: taking git pull
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: cd /var/www/developer/data/www/stage656.devdesignbuild.com/ && git pull
+
+      - name: Changing Ownerships
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: chown -R developer:developer /var/www/developer/data/www/stage656.devdesignbuild.com/
+
+      - name: Changing Permissions of folders
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: find /var/www/developer/data/www/stage656.devdesignbuild.com/ -type d -exec chmod 755 {} \;
+
+      - name: Changing Permissions of files
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: find /var/www/developer/data/www/stage656.devdesignbuild.com/ -type f -exec chmod 644 {} \;
+
+  initialising-deployment-stage:
+    name: initialising deployment staging
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-20.04
+    steps:
+      - name: taking git pull
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: cd /var/www/developer/data/www/stage642.devdesignbuild.com/ && git pull
+
+      - name: Changing Ownerships
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: chown -R developer:developer /var/www/developer/data/www/stage642.devdesignbuild.com/
+
+      - name: Changing Permissions of folders
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: find /var/www/developer/data/www/stage642.devdesignbuild.com/ -type d -exec chmod 755 {} \;
+
+      - name: Changing Permissions of files
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: find /var/www/developer/data/www/stage642.devdesignbuild.com/ -type f -exec chmod 644 {} \;

@@ -1,0 +1,279 @@
+body {
+    overflow-x: hidden !important;
+}
+
+.pell-books .img1 {
+    position: relative;
+    rotate: 2deg;
+    left: -199px;
+}
+
+.pell-books .img2 {
+
+    rotate: 1deg;
+    position: relative;
+    left: -244px;
+    top: -27px;
+
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #eaa451 !important;
+}
+
+.pell-books .img3 {
+    width: 28%;
+    rotate: -1.8deg;
+    position: relative;
+    left: -295px;
+    top: -63px;
+
+}
+
+.pell-books .img4 {
+    rotate: 1deg;
+    position: relative;
+    left: -305px;
+    top: -35px;
+}
+
+.pell-books .img5 {
+    rotate: 0.2deg;
+    position: relative;
+    left: -404px;
+    top: -70px;
+}
+
+.img6 {
+    rotate: 0deg;
+    position: relative;
+    left: 121px;
+    top: -196px;
+    width: 24%;
+}
+
+.book-selling-wrapper div h6 {
+    color: #000;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.6%;
+}
+
+.img7 {
+    rotate: 0deg;
+    position: relative;
+    left: 121px;
+    top: -196px;
+    width: 24%;
+}
+
+.book-selling-wrapper {
+    padding: 0px 70px;
+}
+
+.pell-books {
+    background: linear-gradient(180deg, #FFFFFF 0.74%, #F2DFBD 99.47%) !important;
+}
+
+.sellbooks {
+    padding-top: 100px;
+
+}
+
+.rate-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate-price i {
+    font-size: 24px;
+    color: #EAA451;
+    font-weight: 500;
+    font-weight: 600;
+}
+
+.rate-price h4 span {
+    font-size: 16px;
+    color: #AAAAAA;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.rate-price h4 {
+    font-size: 16px;
+    color: #AAAAAA;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.swiper-button-prev {
+    left: 43%;
+    background-image: url("../../assets/images/left-arrow.png");
+}
+
+.swiper-button-next {
+    left: 55%;
+    background-image: url("../../assets/images/right-arrow.png");
+}
+
+.bestsellingbooks-wrapper {
+    background: #fff !important;
+    padding: 100px 0px;
+
+    .left-side-wrapper {
+        .bestselling-books {
+            h4 {
+                color: #c9dce9;
+                font-family: "Creato Display";
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            h2 {
+                color: #fff;
+                font-family: "Fahkwang";
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            p {
+                color: #fff;
+                font-family: "Creato Display";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 179.4%;
+
+                /* 32.292px */
+                &.middle-para {
+                    color: #c9dbe9;
+                    font-family: "Creato Display";
+                    font-size: 20px;
+                    font-style: italic;
+                    font-weight: 700;
+                    line-height: 179.4%;
+                    /* 35.88px */
+                }
+            }
+        }
+    }
+
+    .book-selling-wrapper {
+        .book-wrapper {
+            .book-content {
+                text-align: center;
+
+                h4 {
+                    color: #000;
+                    text-align: left;
+                    font-family: "Poppins";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-top: 11px;
+                }
+
+                h5 {
+                    font-size: 15px;
+                    color: lightslategray;
+                    font-family: 'Poppins';
+                    font-weight: 300;
+                    text-align: left;
+                }
+
+                .book-star-wrapper {
+                    .star {
+                        color: #f9c00c;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                    text-align: center;
+                    font-family: "Creato Display";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            display: none;
+        }
+
+        .swiper-button-prev {
+            left: 20px;
+            display: none;
+
+        }
+
+        .swiper-button-next {
+
+            left: 150px;
+            display: none;
+        }
+
+
+    }
+}
+
+@media(max-width: 768px) {
+    .bestsellingbooks-wrapper {
+        padding: 50px 0px;
+
+        .left-side-wrapper {
+            .bestselling-books {
+                h2 {
+                    font-size: 48px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .book-selling-wrapper {
+            .book-wrapper {
+                .book-img {
+                    text-align: center;
+                }
+
+                .book-content {
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

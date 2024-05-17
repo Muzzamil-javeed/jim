@@ -1,0 +1,154 @@
+h2.accordion-header button {
+    font-size: 18px;
+    padding: 23px 14px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    color: #333333 !important;
+    background: transparent;
+    border-bottom: 1px solid #0000001a;
+
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.accordion-item:first-of-type {
+    border: none !important;
+}
+
+.accordion-body {
+    font-size: 15px;
+    font-family: 'Poppins';
+    color: #696969;
+    font-weight: 400;
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: none !important;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+    border-radius: 0px !important;
+}
+
+.accor h4 {
+    color: #000;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.6%;
+}
+
+.accor span {
+    color: #AA5533
+}
+
+.accor h6 {
+    font-size: 17px;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 300;
+    text-align: left;
+}
+
+
+
+.mitchadam-wrapper {
+    padding: 0px 100px 100px 100px;
+
+    .mitchadam-head {
+        h4 {
+            color: #000;
+            font-family: "Creato Display";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        h2 {
+            color: #076350;
+            font-family: "Fahkwang";
+            font-size: 62px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .mitchadam-content {
+        p {
+            color: #000;
+            font-family: "Creato Display";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 179.4%;
+            /* 32.292px */
+        }
+
+        .btn-wrap {
+            a {
+                color: #076350;
+                font-family: "Creato Display";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: #076350;
+                    height: 2px;
+                    width: 0px;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    padding-left: 40px;
+
+                    &::before {
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .mitchadam-wrapper {
+        .mitchadam-head {
+            h4 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 48px;
+            }
+
+        }
+    }
+}

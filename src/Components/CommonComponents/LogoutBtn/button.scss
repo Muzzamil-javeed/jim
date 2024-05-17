@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+.navigation {
+    width: 100%;
+    border-radius: 10px;
+
+    img {
+      width: 25px;
+    //   border-radius: 50px;
+      float: left;
+      max-width: none;
+    }
+
+    .logout {
+        font-size: 12px;
+        font-family: 'Poppins';
+        position: relative;
+        right: -8px;
+        bottom: -4px;
+        overflow: hidden;
+        letter-spacing: 1px;
+        opacity: 0;
+        transition: opacity 0.45s;
+        -webkit-transition: opacity 0.35s;
+        color: #4E3D35;
+
+    }
+
+    .button {
+        text-decoration: none;
+        float: right;
+      padding: 8px;
+    //   margin: 15px;
+      color: white;
+      width: 40px;
+
+      transition: width .35s;
+      -webkit-transition: width .35s;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    span:hover {
+      width: 100px;
+    }
+
+    span:hover .logout{
+      opacity: .9;
+    }
+
+    span {
+      text-decoration: none;
+    }
+}
+
+

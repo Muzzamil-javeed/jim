@@ -1,0 +1,204 @@
+.signup-wrapper {
+  padding: 100px 0;
+  height: 100vh;
+  background: linear-gradient(34deg, #000 0%, #644D43 100%);
+  .signup-head {
+    h3 {
+        color: #ffffffdb;
+        font-family: 'Poppins';
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 16px;
+        line-height: normal;
+    }
+    h2 {
+        color: #ffffff;
+        font-family: 'Poppins';
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 82.8%;
+        text-align: left;
+        letter-spacing: 0px;
+    }
+  }
+  .signup-img {
+    img {
+      width: 80%;
+    }
+  }
+  .signup-form {
+    h2 {
+        color: #ffffff;
+        font-family: 'Poppins';
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0.225px;
+        text-align: center;
+        border-bottom: 2px solid #ffffff6b;
+        padding-bottom: 19px;
+        text-transform: uppercase;
+    }
+    .form-group {
+      margin: 30px 0;
+      .col-sm-12 {
+        padding: 0px !important;
+      }
+    }
+    label {
+        color: #ffffff;
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0.08px;
+        margin-bottom: 5px;
+
+    }
+    input {
+      display: flex;
+      padding: 13px 15px;
+      align-items: center;
+      gap: 10px;
+      align-self: stretch;
+      &::placeholder {
+        color: #9a9ab0;
+
+        /* Body/Body 1 Regular */
+        font-family: Mulish;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 19.2px */
+        letter-spacing: 0.08px;
+      }
+    }
+    .agree-terms {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+      input {
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        color: #9a9ab0;
+        font-family: "Creato Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 18.2px */
+        letter-spacing: 0.112px;
+        margin: 0px;
+      }
+    }
+    .signup-btn {
+      display: flex;
+      padding: 14px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background: #bda780;
+      color: #fff;
+      text-align: center;
+      font-family: "Creato Display";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 19.2px */
+      letter-spacing: 0.08px;
+      width: 100%;
+      border: none;
+      transition: all 0.5s ease;
+      cursor: pointer;
+      &:hover {
+        background: #fff;
+        color: #bda780;
+        transition: all 0.5s ease;
+      }
+    }
+    .signup-with-google {
+      display: flex;
+      gap: 10px;
+      padding: 14px 24px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 8px;
+      border: 2px solid #455e88;
+      background-color: transparent;
+      width: 100%;
+      transition: all 0.5s ease;
+      img {
+        width: 16px;
+      }
+      p {
+        text-align: center;
+        color: #455e88;
+        text-align: center;
+        font-family: "Creato Display";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 19.2px */
+        letter-spacing: 0.08px;
+        margin: 0px;
+      }
+      &:hover {
+        background: #455e88;
+        color: #fff;
+        transition: all 0.5s ease;
+        p {
+          color: #fff;
+        }
+      }
+    }
+    p {
+      color: #9a9ab0;
+      text-align: center;
+      font-family: "Creato Display";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 14.4px */
+      letter-spacing: 0.096px;
+      margin: 10px;
+    }
+  }
+  .sign-in-wrap {
+    text-align: center;
+    margin: 10px 0;
+    a {
+      color: #bda780;
+      text-align: center;
+      font-family: "Creato Display";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; /* 19.2px */
+      letter-spacing: 0.08px;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .signup-wrapper {
+    height: fit-content;
+    .signup-head {
+      h2 {
+        font-size: 45px;
+      }
+    }
+    .signup-img{
+      text-align: center;
+    }
+  }
+}

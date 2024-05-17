@@ -1,0 +1,145 @@
+.dots-img img {
+    width: 100px;
+    position: absolute;
+    left: -48px;
+    top: 77px;
+    z-index: 9;
+
+
+}
+
+.dots-img {
+    position: relative;
+}
+
+.dots-img2 img {
+    width: 100px;
+    position: absolute;
+    right: -49px;
+    top: -149px;
+    z-index: 9;
+    rotate: 180deg;
+
+}
+
+.dots-img2 {
+    position: relative;
+}
+
+
+.aboutscott-wrapper {
+    padding: 100px 0px;
+    position: relative;
+
+    .scott-miller-content {
+        h4 {
+            color: #000;
+            font-family: 'Playfair Display';
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 166.6%;
+        }
+
+        h2 {
+            color: #A4795D;
+            font-family: 'Playfair Display';
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 166.6%;
+        }
+
+        span {
+            color: #000000;
+            font-family: "Playfair Display";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        p {
+            color: #000;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+            border-left: 1px solid #000;
+            padding-left: 31px;
+
+            /* 32.292px */
+            &.highlight {
+                color: #076350;
+                font-family: "Creato Display";
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 179.4%;
+                /* 32.292px */
+            }
+        }
+
+        .scott-btn-wrapper {
+            a {
+                color: #ffffff;
+                font-family: 'Poppins';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                background: #a4795d;
+                width: 183px;
+                height: 49px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 33px;
+                border: 1px solid #a4795d;
+
+
+                &:hover {
+                    background: #fff;
+                    color: #a4795d;
+                    border: 1px solid #a4795d;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        background: url("../../assets/images/women-right-book.png");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutscott-wrapper {
+        padding: 50px 0px;
+
+        .scott-miller-content {
+            h4 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

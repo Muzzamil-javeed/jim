@@ -1,0 +1,285 @@
+.about-banner-wrapper {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  //   margin-top: 100px;
+  background: #f7ecdb;
+  .about-banner {
+    h3 {
+      color: #000;
+      text-align: center;
+      font-family: "Creato Display";
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    h2 {
+      color: #1a2332;
+      text-align: center;
+      font-family: Wahiyang;
+      font-size: 160px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .dark-wrap {
+    border-radius: 14px 14px 0px 0px;
+    background: #f3e3cb;
+    padding: 50px 0;
+    p {
+      color: #000;
+      text-align: center;
+      font-family: "Fahkwang";
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 179.4%; /* 62.79px */
+    }
+  }
+  .about-img {
+    position: absolute;
+    top: 45%;
+  }
+}
+
+.books-containing-wrapper {
+  padding: 100px 0;
+  .book-info {
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+    margin: 20px 0;
+    .book-info-img {
+      img {
+        border-radius: 10px;
+        width: 200px;
+        height: auto;
+      }
+    }
+    .book-tags {
+      p {
+        border-radius: 98px;
+        background: #ffdada;
+        color: #ff5353;
+        text-align: center;
+        font-family: "poppins";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: fit-content;
+        padding: 10px 20px;
+      }
+    }
+    .book-info-content {
+      h3 {
+        color: #11142d;
+        font-family: "Fahkwang";
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      p {
+        color: #11142d;
+        font-family: "Creato Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+      }
+    }
+    .book-bottom-desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h4 {
+        color: #aaa;
+        font-family: "Creato Display";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      p {
+        color: #11142d;
+        font-family: "Creato Display";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .stars {
+        i {
+          color: #ff754c;
+        }
+      }
+      .rating {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        p {
+          color: #11142d;
+          text-align: right;
+          font-family: "Creato Display";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        span {
+          color: #aaa;
+          text-align: right;
+          font-family: "Creato Display";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    .book-info-right {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 20px;
+
+      .promo {
+        border-radius: 6px;
+        border: 1px solid #3b2f4a;
+        background: #f0f0f0;
+        padding: 10px 20px;
+        color: #aaa;
+        text-align: center;
+        font-family: "poppins";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .price-cart-wrapper {
+        p {
+          ins {
+            color: #11142d;
+            font-family: Poppins;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration: none;
+          }
+          del {
+            color: #aaa;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-decoration-line: strikethrough;
+          }
+        }
+        .cart-fav-wrap {
+          display: flex;
+          gap: 20px;
+          .add-to-cart {
+            background: #455e88;
+            color: #fff;
+            font-family: "Poppins";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+              background: #11142d;
+            }
+          }
+          .add-to-fav {
+            color: #000;
+            font-size: 22px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            border: 1px solid #f0f0f0;
+            background: var(--White, #fff);
+            transition: all 0.3s ease-in-out;
+            // border: none;
+            cursor: pointer;
+            &:hover {
+              background: #11142d;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-testimonial {
+  .testimonials-wrapper {
+    background: linear-gradient(69deg, #293750 0.92%, #455e88 100%);
+    .testimonial-wrap {
+      .testimonial-content {
+        .testimonial-name {
+          background: #8ea2c7;
+        }
+      }
+    }
+  }
+}
+
+.subscribe-form-about {
+  .subscribeform-wrapper {
+    background: linear-gradient(81deg, #68552a 0.74%, #4d3f20 99.47%);
+    .form-wrapper {
+      form {
+        input {
+          background: linear-gradient(81deg, #beaf8b 0.74%, #bfaf8c 99.47%);
+        }
+        button {
+          background: linear-gradient(81deg, #beaf8b 0.74%, #bfaf8c 99.47%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .about-banner-wrapper {
+    .about-banner {
+      h2 {
+        font-size: 72px;
+        line-height: 80px;
+      }
+    }
+  }
+  .books-containing-wrapper {
+    .book-info {
+      .book-bottom-desc {
+        flex-wrap: wrap;
+      }
+      .book-info-right{
+        .price-cart-wrapper{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 10px;
+          p{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
